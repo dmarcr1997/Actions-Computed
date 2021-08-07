@@ -32,7 +32,7 @@ int calculateDist(int echo, int trig){
 }
 
 void checkDists(int distL, int distR){
-  if ((distL >40 && distR>40) && (distL <60 && distR<60))
+  if ((distL >45 && distR>45) && (distL <60 && distR<60))
   {
     Serial.println("New Tab"); 
     Serial.print("DistanceL: ");       
@@ -46,7 +46,7 @@ void checkDists(int distL, int distR){
   }
   if (distL>=10 && distL<=20)
   {
-    Serial.println("Left Locked");
+    Serial.println("Volume Lock");
     while(distL<=40)
     {
       
@@ -68,6 +68,7 @@ void checkDists(int distL, int distR){
   
   if (distR>=10 && distR<=20)
   {
+    Serial.println("Brightness Lock");
     while(distR<=40)
     {
       distR =calculateDist(echo2, trigger2);
