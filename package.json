@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dmarcr1997/Actions-Computed#readme",
   "dependencies": {
+    "open": "^8.2.1",
     "serialport": "^9.2.0"
   }
 }
