@@ -1,0 +1,19 @@
+{
+  "name": "actions-computed",
+  "version": "1.0.0",
+  "description": "arduino project for roboHacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmarcr1997/Actions-Computed.git"
+  },
+  "author": "Damon Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmarcr1997/Actions-Computed/issues"
+  },
+  "homepage": "https://github.com/dmarcr1997/Actions-Computed#readme"
+}
