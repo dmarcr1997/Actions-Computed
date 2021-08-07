@@ -41,13 +41,13 @@ void checkDists(int distL, int distR){
     Serial.println(distR);
     delay (500);
   }
-  if (distR <=5 && distL <=5){
+  else if (distR <=5 && distL <=5){
       Serial.println("Close");
   }
-  if (distL>=10 && distL<=20)
+  else if (distL>=10 && distL<=20 && distR >= 30)
   {
     Serial.println("Volume Lock");
-    while(distL<=40)
+    while(distL<=30)
     {
       
       distL =calculateDist(echo1, trigger1);
@@ -58,7 +58,7 @@ void checkDists(int distL, int distR){
         Serial.println("Volume Increased"); 
         delay (300);
       }
-      if (distL>20) //Hand pulled out
+      else if (distL>20 && distL<=30) //Hand pulled out
       {
         Serial.println("Volume Decreased"); 
         delay (300);
@@ -66,10 +66,10 @@ void checkDists(int distL, int distR){
     }
   }
   
-  if (distR>=10 && distR<=20)
+  else if (distR>=10 && distR<=20 && distL >= 30)
   {
     Serial.println("Brightness Lock");
-    while(distR<=40)
+    while(distR<=30)
     {
       distR =calculateDist(echo2, trigger2);
       Serial.print("DistanceR: ");       
@@ -79,7 +79,7 @@ void checkDists(int distL, int distR){
         Serial.println("Brightness Increased"); 
         delay (300);
       }
-      if (distR>20) 
+      else if (distR>20 && distR <= 30) 
       {
         Serial.println("Brightness Decreased"); 
         delay (300);
