@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dmarcr1997/Actions-Computed#readme",
   "dependencies": {
+    "brightness": "^3.0.0",
+    "loudness": "^0.4.1",
     "open": "^8.2.1",
     "serialport": "^9.2.0"
   }
