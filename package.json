@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dmarcr1997/Actions-Computed/issues"
   },
-  "homepage": "https://github.com/dmarcr1997/Actions-Computed#readme"
+  "homepage": "https://github.com/dmarcr1997/Actions-Computed#readme",
+  "dependencies": {
+    "serialport": "^9.2.0"
+  }
 }

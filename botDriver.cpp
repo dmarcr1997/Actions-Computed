@@ -39,9 +39,11 @@ void checkDists(int distL, int distR){
     Serial.println(distL);
     Serial.print("DistanceR: ");       
     Serial.println(distR);
-    delay(500);
+    delay (500);
   }
-  
+  if (distR <=5 && distL <=5){
+      Serial.println("Close");
+  }
   if (distL>=10 && distL<=20)
   {
     Serial.println("Left Locked");
@@ -54,12 +56,12 @@ void checkDists(int distL, int distR){
       if (distL<10) //Hand pushed in 
       {
         Serial.println("Volume Increased"); 
-        delay(300);
+        delay (300);
       }
       if (distL>20) //Hand pulled out
       {
         Serial.println("Volume Decreased"); 
-        delay(300);
+        delay (300);
       }
     }
   }
@@ -74,15 +76,16 @@ void checkDists(int distL, int distR){
       if (distR<10) 
       {
         Serial.println("Brightness Increased"); 
-        delay(300);
+        delay (300);
       }
       if (distR>20) 
       {
         Serial.println("Brightness Decreased"); 
-        delay(300);
+        delay (300);
       }
-    } 
+    }
   }
+  
   delay(200);
 }
 
